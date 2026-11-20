@@ -37,6 +37,29 @@ Los datos generados se conservan en memoria y pueden reutilizarse en pruebas con
 3. Ejecute con F6 o el boton Ejecutar proyecto.
 4. La clase principal es `laboratorio.Arranque`.
 
+## Abrir y ejecutar en IntelliJ IDEA
+
+Este proyecto no incluye archivos `.idea` ni `.iml` para que pueda clonarse en cualquier computadora. Por eso IntelliJ debe configurarse una sola vez:
+
+1. Abra la carpeta raíz `SimulacionOctavio`, no la carpeta `src`.
+2. Vaya a **File > Project Structure > Project** y seleccione un **JDK 8 o superior**.
+3. En el árbol del proyecto, haga clic derecho sobre `src` y seleccione **Mark Directory as > Sources Root**. La carpeta debe cambiar a color azul.
+4. Abra `src\laboratorio\Arranque.java`.
+5. Haga clic derecho dentro del método `main` y seleccione **Run 'Arranque.main()'**.
+
+Si no aparece **Run**, compruebe que el archivo comienza con `package laboratorio;` y que `src` está marcado como **Sources Root**. También puede ejecutar el proyecto desde la terminal integrada:
+
+```bat
+rmdir /s /q build
+mkdir build\classes
+dir /s /b src\*.java > sources.txt
+javac -encoding UTF-8 -d build\classes @sources.txt
+del sources.txt
+java -cp build\classes laboratorio.Arranque
+```
+
+Otra opción es abrir la ventana **Ant** de IntelliJ, agregar `build.xml` y ejecutar los objetivos `clean`, `jar` y `run`.
+
 ## Compilacion por terminal
 
 Desde la carpeta del proyecto:
