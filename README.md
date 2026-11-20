@@ -37,6 +37,18 @@ Los datos generados se conservan en memoria y pueden reutilizarse en pruebas con
 3. Ejecute con F6 o el boton Ejecutar proyecto.
 4. La clase principal es `laboratorio.Arranque`.
 
+## Si IntelliJ marca JDK 1.8 como no encontrado
+
+El proyecto no incluye una instalación local de Java. Seleccione una JDK instalada:
+
+1. Abra **File > Project Structure > SDKs**.
+2. Pulse **+ > Add JDK**.
+3. Seleccione la carpeta del JDK instalado, normalmente `C:\Program Files\Java\jdk-25`.
+4. Abra **File > Project Structure > Project**.
+5. Seleccione ese JDK en **SDK** y marque lenguaje `8`.
+6. Pulse **Apply** y **OK**.
+7. Seleccione **Arranque** y pulse Ejecutar.
+
 ## Abrir y ejecutar en IntelliJ IDEA
 
 Este proyecto no incluye archivos `.idea` ni `.iml` para que pueda clonarse en cualquier computadora. Por eso IntelliJ debe configurarse una sola vez:
