@@ -49,6 +49,8 @@ Este proyecto no incluye archivos `.idea` ni `.iml` para que pueda clonarse en c
 
 El proyecto incluye el módulo `SimulacionOctavio.iml` y una configuración ejecutable versionada llamada **Arranque**. Después de clonar, también puede elegir **Arranque** en la lista desplegable de configuraciones de IntelliJ y pulsar el botón verde de ejecución.
 
+Si IntelliJ ya tenía abierta otra vista del proyecto o no reconoce la configuración: cierre IntelliJ, vuelva a abrir la carpeta raíz del proyecto, espere a que termine la importación y seleccione **Reload All from Disk**. Después elija **Arranque** en la lista superior. No abra la carpeta `src` como proyecto independiente.
+
 Si no aparece **Run**, compruebe que el archivo comienza con `package laboratorio;` y que `src` está marcado como **Sources Root**. También puede ejecutar el proyecto desde la terminal integrada:
 
 ```bat
