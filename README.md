@@ -47,6 +47,8 @@ Este proyecto no incluye archivos `.idea` ni `.iml` para que pueda clonarse en c
 4. Abra `src\laboratorio\Arranque.java`.
 5. Haga clic derecho dentro del método `main` y seleccione **Run 'Arranque.main()'**.
 
+El proyecto incluye el módulo `SimulacionOctavio.iml` y una configuración ejecutable versionada llamada **Arranque**. Después de clonar, también puede elegir **Arranque** en la lista desplegable de configuraciones de IntelliJ y pulsar el botón verde de ejecución.
+
 Si no aparece **Run**, compruebe que el archivo comienza con `package laboratorio;` y que `src` está marcado como **Sources Root**. También puede ejecutar el proyecto desde la terminal integrada:
 
 ```bat

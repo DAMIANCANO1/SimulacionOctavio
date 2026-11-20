@@ -32,8 +32,13 @@ build/
 dist/
 out/
 nbproject/private/
-.idea/
+.idea/*
+!.idea/misc.xml
+!.idea/modules.xml
+!.idea/runConfigurations/
+!.idea/runConfigurations/*.xml
 .vscode/
 *.class
 *.jar
 *.iml
+!SimulacionOctavio.iml
